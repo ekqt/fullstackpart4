@@ -1,0 +1,71 @@
+GET http://localhost:3003/api/posts
+
+###
+GET http://localhost:3003/api/posts/60cc51a5fbc7726a8eccce00
+
+###
+POST http://localhost:3003/api/posts/
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imhzb3NhIiwiaWQiOiI2MGNjZDE3MGQwOWFhNDA5YzA4Y2Q2OTYiLCJpYXQiOjE2MjQxMDQwMDIsImV4cCI6MTYyNDEwNzYwMn0.aHtSAiAdM4LTT8iw9Je_44oQ0KuPKA0lCL2LaiIruwo
+
+{
+    "tags": "tech",
+    "title": "Concepts You DO NOT Need to Know If You are a JavaScript Master",
+    "author": "Dev.to",
+    "description": "JavaScript is undoubtedly a must have if you want to become a web developer.",
+    "url": "https://dev.to/axlyaguana11/concepts-you-need-to-know-if-you-are-a-javascript-beginner-5am0",
+    "imageUrl": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5xtfavzdsdydctb0c83x.jpg"
+}
+
+###
+DELETE http://localhost:3003/api/posts/60cddcbd1245740fe7026cd3
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imhzb3NhIiwiaWQiOiI2MGNjZDE3MGQwOWFhNDA5YzA4Y2Q2OTYiLCJpYXQiOjE2MjQxMDQwMDIsImV4cCI6MTYyNDEwNzYwMn0.aHtSAiAdM4LTT8iw9Je_44oQ0KuPKA0lCL2LaiIruwo
+
+###
+PUT http://localhost:3003/api/posts/60cc71eaade63a6f4818db24
+content-type: application/json
+
+{
+    "tags": "tech",
+    "title": "What is Web3 - Explaining The Decentralized Internet of the Future Explained",
+    "author": "FreeCodeCamp.org",
+    "description": "descp",
+    "url": "https://www.freecodecamp.org/news/what-is-web3/",
+    "imageUrl": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/05/web3-future-of-web.jpg"
+}
+
+###
+
+GET http://localhost:3003/api/users
+
+###
+POST http://localhost:3003/api/users/
+content-type: application/json
+
+{
+    "username": "hsosa",
+    "name": "Hector Sosa",
+    "password": "developer"
+}
+
+###
+POST http://localhost:3003/api/login
+content-type: application/json
+
+{
+    "username": "hsosa",
+    "password": "developer"
+}
+
+# {
+#     "username": "ckronenberg",
+#     "password": "basketball"
+# }
+# {
+#     "username": "nlorenz",
+#     "password": "vaping"
+# }
+# {
+#     "username": "hsosa",
+#     "password": "developer"
+# }
